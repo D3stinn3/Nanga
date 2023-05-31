@@ -4,7 +4,8 @@ from . import views
 from django.conf import settings
 
 urlpatterns = [
-    path('portfolio/', views.home_page, name="home")
+    path('login/', views.login_page, name="login"),
+    path('profile/', views.profile_page, name="profile")
 ]
 
 if settings.DEBUG:

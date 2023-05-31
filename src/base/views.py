@@ -1,7 +1,12 @@
 from django.shortcuts import render
 
 # Create your views here.
-def home_page(request):
+def login_page(request):
     context = {}
     
-    return render(request, 'home.html', context)
+    return render(request, 'login.html', context)
+
+def profile_page(request):
+    context = {}
+    
+    return render(request, 'index.html', context)
