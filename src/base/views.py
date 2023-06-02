@@ -10,3 +10,8 @@ def profile_page(request):
     context = {}
     
     return render(request, 'index.html', context)
+
+def signup_page(request):
+    context = {}
+    
+    return render(request, 'signup.html', context)
