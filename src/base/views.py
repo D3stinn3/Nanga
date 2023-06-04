@@ -30,6 +30,11 @@ def signup_page(request):
     
     return render(request, 'signup.html', context)
 
+def landing_page(request):
+    context = {}
+    
+    return render(request, 'landing.html', context)
+
 @login_required(login_url='/login')
 def account_page(request, pk):
     user = request.user

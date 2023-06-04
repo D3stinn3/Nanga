@@ -20,6 +20,8 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
 	<script src="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
 	<script src="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
 
     <script>
 		//Init tooltips
@@ -53,6 +55,16 @@
 		});
 		
     </script>
+	<script>
+		// Initialize the Lottie animation
+		const animation = bodymovin.loadAnimation({
+		  container: document.getElementById('animationContainer'),
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: 'static/media/Aniki Hamster.json' // Replace with the path to your animation JSON file
+		});
+	  </script>
 </body>
 </html>
     
