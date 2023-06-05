@@ -39,8 +39,8 @@ def signup_page(request):
         form = UserCreate(request.POST)
         
         if form.is_valid():
-            user = form.save()
-            # username = form.cleaned_data.get('email')
+            user = form.save(commit=False)
+            user.save()
             login(request, user)
             return redirect('login')
     else:
