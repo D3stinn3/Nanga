@@ -1049,6 +1049,12 @@ input:checked + .toggle-bg {
   /*Set to match the Tailwind colour you want the active one to be */
 }
 
+.animation-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 .visible {
   visibility: visible;
 }

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">   
+<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" >   
 	<!--Main Col-->
 	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
 		<div class="p-4 md:p-12 text-center lg:text-left">
@@ -18,7 +18,7 @@
 			<div class="pt-12 pb-8">
 				<button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
 				{% if request.user.is_authenticated %}
-				<a href="{% url 'profile' %}">
+				<a href="{% url 'logout' %}">
 					Account Logout
 				</a>
 				{% else %}
@@ -53,7 +53,7 @@
 	<!--Img Col-->
 	<div class="w-full lg:w-2/5">
 		<!-- Big profile image for side bar (desktop) -->
-		<img src="https://source.unsplash.com/JvhnrefFa8A" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+		<img src="https://source.unsplash.com/BTmuZ_Js5zA" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
 		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
 	</div>
 	
@@ -67,7 +67,7 @@
 
 {% endblock content %}
 
-
+BTmuZ_Js5zA
 	
 
 

@@ -62,9 +62,29 @@
 		  renderer: 'svg',
 		  loop: true,
 		  autoplay: true,
-		  path: 'static/media/Aniki Hamster.json' // Replace with the path to your animation JSON file
+		  path: 'static/media/animation2.json' // Replace with the path to your animation JSON file
 		});
-	  </script>
+		// Initialize the second  Lottie animation
+		const animation = bodymovin.loadAnimation({
+		  container: document.getElementById('animationContainer2'),
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: 'static/media/animation2.json' // Replace with the path to your animation JSON file
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  // Initialize the Lottie animation
+		  const animation = bodymovin.loadAnimation({
+			container: document.getElementById('animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: 'static/media/hand.json' // Replace with the path to your animation JSON file
+		  });
+		});
+	</script>
 </body>
 </html>
     
