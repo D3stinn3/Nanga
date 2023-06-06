@@ -1948,12 +1948,6 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.animation-container {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
-
 .hover\:grow:hover {
   flex-grow: 1;
 }

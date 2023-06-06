@@ -39,9 +39,7 @@ def signup_page(request):
         form = UserCreate(request.POST)
         
         if form.is_valid():
-            user = form.save(commit=False)
-            user.save()
-            login(request, user)
+            form.save()
             return redirect('login')
     else:
         form = UserCreate()
