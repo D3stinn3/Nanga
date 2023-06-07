@@ -16,7 +16,7 @@ def login_page(request):
         
         if username is not None:
             login(request, username)
-            return redirect('profile')
+            return redirect('account')
         
     context = {}
     
@@ -54,7 +54,7 @@ def landing_page(request):
     return render(request, 'landing.html', context)
 
 @login_required(login_url='/login')
-def account_page(request, pk):
+def account_page(request):
     user = request.user
     context = {'user' : user} 
-    return render(request, 'account.html', context)
+    return render(request, 'lander.html', context)

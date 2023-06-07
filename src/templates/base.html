@@ -11,7 +11,7 @@
     <title>{% block head_title %} d3$tinn3 {% endblock %}</title>
     {% include 'head/css.html' %} 
 </head>
-<body>
+<body class="text-gray-800 antialiase" >
     <div>
     {% block content %}{% endblock %}
     </div>
@@ -21,7 +21,8 @@
 	<script src="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
 	<script src="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
 
     <script>
 		//Init tooltips
@@ -65,6 +66,12 @@
 		  path: 'static/media/animation.json' // Replace with the path to your animation JSON file
 		});
 	</script>
+	<script>
+    	function toggleNavbar(collapseID) {
+      	document.getElementById(collapseID).classList.toggle("hidden");
+      	document.getElementById(collapseID).classList.toggle("block");
+    	}
+  	</script>
 </body>
 </html>
     

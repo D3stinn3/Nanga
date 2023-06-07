@@ -9,7 +9,7 @@ urlpatterns = [
     path('profile/', views.profile_page, name="profile"),
     path('signin/', views.signup_page, name="signin"),
     path('', views.landing_page, name="home"),
-    path('account/<str:pk>/', views.account_page, name="account")
+    path('account/', views.account_page, name="account")
 ]
 
 if settings.DEBUG:
