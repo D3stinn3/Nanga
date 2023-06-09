@@ -1,6 +1,3 @@
-# Local-cdn Configuration
-local-cdn/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
