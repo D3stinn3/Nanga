@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn src.Portfoilio.asgi
+web: python manage.py migrate && gunicorn src.Portfolio.asgi
