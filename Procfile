@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn src.Portfolio.wsgi
+web: venv/Scripts/python manage.py migrate && gunicorn src.Portfolio.wsgi
