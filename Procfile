@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn src.Portfolio.asgi
+web: python manage.py migrate && gunicorn src.Portfolio.wsgi --log-file -
